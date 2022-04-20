@@ -46,6 +46,16 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+              const actualDiv = document.getElementById('actual');
+              const ulEl = actualDiv.children[1];
+            
+              const things = ['robots', 'solar systems', 'oil'];
+
+              things.forEach((thing,count) => {
+                ulEl.children[count].innerHTML = thing;
+              });
+              
+
         </script>
       </div>
 

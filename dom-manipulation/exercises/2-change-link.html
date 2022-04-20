@@ -30,9 +30,7 @@
         </div>
 
         <div id="actual">
-          <a href="https://www.badgerbadgerbadger.com" expected="blank"
-            >learn about pigs</a
-          >
+          <a href="https://www.badgerbadgerbadger.com" expected="blank" >learn about pigs</a>
         </div>
 
         <script id="dom-manipulation-script">
@@ -40,6 +38,10 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+             const actualDiv = document.getElementById('actual');
+            const aEl = actualDiv.children[0];
+             aEl.innerText = 'learn about badgers';
+
         </script>
       </div>
 
